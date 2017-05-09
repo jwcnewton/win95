@@ -1,0 +1,95 @@
+body {
+    background-image: url("http://i.imgur.com/QSUiXRp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin:0;
+}
+
+html, body {
+ height: 100%;
+}
+
+
+
+.desktopIco {
+    min-width: 60px;
+    min-height: 60px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+
+.toolBar {
+    max-height: 20%;
+    margin: 0;
+    padding: 0;
+    background-color: #bec1c4;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-color: #dccbc1;
+    border-style: solid;
+    border-width: 0.5px;
+}
+.toolBar ul {
+    position:relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #bec1c4;
+    width: 100%;  
+    height: 100%; 
+}
+
+.toolBar li {
+    float: left;
+     height: 100%;
+}
+
+.toolBar li a {
+    display: block;
+    font: bolder;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    height: 100%;
+    padding: 6px 9px;
+    text-decoration: none;
+    font-size: 17px;   
+    font-stretch: ultra-expanded;
+}
+
+.toolBar li a img {
+    margin-bottom: 4px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto;
+    height: 31%;
+    width: 31%;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.toolBar .active {
+    border-style: inset;
+    border-color: darkgray;
+    width: 70%;
+     height: 100%;
+}
+
+.toolBar .time {
+    float: right !important;
+    border-style: inset;
+    border-color: darkgray;
+    width: 70%;
+     height: 100%;
+}
