@@ -9,22 +9,35 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="scripts/desktop.js"></script>
 </body>
-<div id="recycleIcon" class="draggable ui-widget-content">
-    <img src="/styles/images/icons/recycleIco.png" class="desktopIco">
+<div id="recycleIcon" class="draggable ui-widget-content desktopIcon">
+    <img src="styles/images/icons/recycleIco.png" class="desktopIco">
+    <p>Recycle</p>
 </div>
 
-<div id="networkIcon" class="draggable ui-widget-content">
-    <img src="/styles/images/icons/networkIco.png" class="desktopIco">
+<div id="networkIcon" class="draggable ui-widget-content desktopIcon">
+    <img src="styles/images/icons/networkIco.png" class="desktopIco">
+    <p>Network</p>
 </div>
 
-<div id="computIcon" class="draggable ui-widget-content">
-    <img src="/styles/images/icons/computIco.png" class="desktopIco">
-</div>
 
 <div class="toolBar">
-     <ul>
-        <li><a class="active" href="#"><img class="startImage" src="/styles/images/icons/winIco.png"> Start</a></li>
+    <ul>
+        <li class="start-menu">
+            <a class="active"><img class="startImage" src="styles/images/icons/winIco.png"> Start
 
+
+            </a>
+            <div class="start-menu-content">
+                <a >Link 1</a>
+                <a >Link 2</a>
+                <div class="breakLine"></div>
+                <a >Link 3</a>
+            </div>
+        </li>
+        <li><a class="open-window">Internet Explorer</a></li>
+        <li class="time">
+            <a id="desktop-clock"></a>
+        </li>
     </ul>
 </div>
 
