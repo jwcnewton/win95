@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="styles/site.css" rel="stylesheet">
+<link href="styles/site.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 </head>
 
 <body>
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="scripts/desktop.js"></script>
-</body>
-<div id="recycleIcon" class="draggable ui-widget-content desktopIcon">
-    <img src="styles/images/icons/recycleIco.png" class="desktopIco">
-    <p>Recycle</p>
-</div>
 
-<div id="networkIcon" class="draggable ui-widget-content desktopIcon">
-    <img src="styles/images/icons/networkIco.png" class="desktopIco">
-    <p>Network</p>
-</div>
+    <div id="desktop">
+        <div id="recycleIcon" class="draggable desktopIcon">
+            <img src="styles/images/icons/recycleIco.png" class="desktopIco">
+            <p>Recycle</p>
+        </div>
 
+        <div id="networkIcon" class="draggable desktopIcon">
+            <img src="styles/images/icons/networkIco.png" class="desktopIco">
+            <p>Network</p>
+        </div>
 
-<div class="toolBar">
-    <ul>
-        <li class="start-menu">
-            <a class="active"><img class="startImage" src="styles/images/icons/winIco.png"> Start
+        <div id="pop-up-win" class="ui-widget-content pop-up-window ">
+             <h3 >Netscape</h3>
+            <div class="inner-pop-up">
 
-
-            </a>
-            <div class="start-menu-content">
-                <a >Link 1</a>
-                <a >Link 2</a>
-                <div class="breakLine"></div>
-                <a >Link 3</a>
             </div>
-        </li>
-        <li><a class="open-window">Internet Explorer</a></li>
-        <li class="time">
-            <a id="desktop-clock"></a>
-        </li>
-    </ul>
-</div>
+        </div>
+    </div>
+
+
+    <div class="toolBar">
+        <ul>
+            <li class="start-menu">
+                <a class="active"><img class="startImage" src="styles/images/icons/winIco.png"> Start
+
+                </a>
+                <div class="start-menu-content">
+                    <a>
+                        <u>P</u>rograms <span class="chevron right"></span> </a>
+                    <a>
+                        <u>D</u>ocuments <span class="chevron right"></span> </a>
+                    <a>
+                        <u>S</u>ettings <span class="chevron right"></span> </a>
+                    <a>
+                        <u>F</u>ind </a>
+                    <a>
+                        <u>R</u>un... </a>
+                    <div class="breakLine"></div>
+                    <a>Sh<u>u</u>tdown </a>
+                </div>
+            </li>
+            <li><a class="open-window">Internet Explorer</a></li>
+            <li class="time">
+                <a id="desktop-clock"></a>
+            </li>
+        </ul>
+    </div>
+</body>
+
 
 </html>

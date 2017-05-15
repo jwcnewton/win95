@@ -10,11 +10,11 @@ body {
     margin:0;
 }
 
-html, body {
- height: 100%;
+#desktop {
+    height:100%;
+    width: 100px;
+    position: relative;  
 }
-
-
 
 .desktopIco {
     min-width: 50px;
@@ -26,8 +26,40 @@ html, body {
     padding-left: 5px;
     
 }
+.ui-resizable-helper { border: 2px dotted #00F; }
 
+.pop-up-window h3 { 
 
+    margin: 0; 
+    top: 0%;
+    transform: translate( 0%, 0%);
+}
+
+.pop-up-window {
+    border-style: inset;
+    border-color: darkgray;
+    cursor: default;
+    background-color: white;
+    height: 300px;
+    width: 300%;
+    position: unset;
+}
+
+.ui-icon-gripsmall-diagonal-se {
+    width: 50%;
+    height: 50%;
+}
+
+.pop-up-window .inner-pop-up {
+  width: 94%;
+  height: 94%;
+  background: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 5%;
+  transform: translate(-50%, -50%);
+}
 
 .toolBar {
     max-height: 20%;
@@ -61,7 +93,7 @@ html, body {
     font: bolder;
     color: black;
     font-family: Helvetica, sans-serif;
-    text-align: center;
+
     height: 100%;
     padding: 6px 9px;
     text-decoration: none;
@@ -144,6 +176,7 @@ li a:hover:not(.active) {
     text-align: left;
     text-decoration: none;
     display: block;
+    right: 100%;
 }
 
 .start-menu-content a:hover {background-color: #000080; color: white; }
@@ -168,4 +201,32 @@ li a:hover:not(.active) {
     margin-top: 0.5px;
     margin-top: 0.5px;
     border-width: 1.5px;
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.25em;
+	left: 0.15em;
+    width: 0.25em;
+    top: 0.15em;
+	position: relative;
+
+
+}
+
+.chevron.right:before {
+    float: right !important;
+
+	margin-top: 2%;
+	transform: rotate(45deg);
+}
+
+.pop-up{
+    height: 200px;
+    width: 200px;
+    border-style: outset;
+    border-color: darkgray;
 }
