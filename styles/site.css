@@ -16,16 +16,16 @@ body {
     position: relative;  
 }
 
-.desktopIco {
-    min-width: 50px;
-    min-height: 50px;
-    display: block;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
-    padding-left: 5px;
-    
+
+/* POP UPS */
+
+.pop-up{
+    height: 200px;
+    width: 200px;
+    border-style: outset;
+    border-color: darkgray;
 }
+
 .ui-resizable-helper { border: 2px dotted #00F; }
 
 .pop-up-window h3 { 
@@ -43,23 +43,53 @@ body {
     height: 300px;
     width: 300%;
     position: unset;
+   box-sizing: border-box;
 }
 
 .ui-icon-gripsmall-diagonal-se {
     width: 50%;
     height: 50%;
 }
-
-.pop-up-window .inner-pop-up {
-  width: 94%;
-  height: 94%;
-  background: green;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 5%;
-  transform: translate(-50%, -50%);
+.heading-pop-up {
+  width: 99%;
+  padding: .1em;
+  background: #00008C;
+  box-sizing: inherit;
+  margin: .1em auto;
 }
+
+.pop-up-window .heading-pop-up p{
+    font-size: 1.1em;
+    margin: 0 0 0 0;
+    position: inherit; 
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.inner-pop-up {
+    box-sizing: inherit;
+    width: 99%;
+    margin: .1em auto;
+    border: 4px solid black;
+}
+.child-pop-up-btn {
+    margin-left: 1px;
+    margin-top: .1em;
+    padding: .6em;
+    float: right;
+    background:#BFC5C5;
+    box-sizing: inherit;
+    border-style: inset;
+    border-color: darkgray;
+    cursor: pointer;
+    border: 1px;
+    background:url('https://cdn0.iconfinder.com/data/icons/modagraphica-interface/30/cancel-512.png') no-repeat center;
+}
+
+
+
+
+/* TOOLBAR */
 
 .toolBar {
     max-height: 20%;
@@ -137,6 +167,20 @@ li a:hover:not(.active) {
      height: 100%;
 }
 
+
+/* DESKTOP ICONS */
+
+.desktopIco {
+    min-width: 50px;
+    min-height: 50px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    
+}
+
 .desktopIcon img {
     cursor: pointer;
 }
@@ -151,9 +195,7 @@ li a:hover:not(.active) {
     font-family: Helvetica, sans-serif;
 }
 
-/*                Start Menu                     */
-
-
+/* Start Menu */
 
 .start-menu {
     position: relative;
@@ -224,9 +266,3 @@ li a:hover:not(.active) {
 	transform: rotate(45deg);
 }
 
-.pop-up{
-    height: 200px;
-    width: 200px;
-    border-style: outset;
-    border-color: darkgray;
-}
