@@ -10,4 +10,4 @@ app.get("/", function(request, response){ //root dir
     response.send("Hello!!");
 });
 
-app.listen(port, host);
+app.listen(port);
